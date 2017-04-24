@@ -22,10 +22,9 @@
             <li>
               <a href="<%- site_navs[i].url ? url_for(site_navs[i].url) : url_for(site_navs[i]) %>">
                 <% if (site_navs[i].icon) { %>
-                  <i class="fa fa-<%= site_navs[i].icon %> fa-stack-2x"></i>
-                <% } else { %>
-                  <%= i %>
+                  <i class="fa fa-<%= site_navs[i].icon %> "></i>
                 <% } %>
+                <%= site_navs[i].id %>
               </a>
             </li>
           <% } %>
